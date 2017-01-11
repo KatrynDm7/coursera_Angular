@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div ng-controller="LunchCheckController">
+        <form>
+            <div class="form-group">
+                <textarea ng-model="content" class="form-control border-{{status}}"></textarea>
+                *Works also in cases: item 1, item2,,item3 and tem 1, item2, ,item3
+                <div class="{{status}}">{{message}}</div>
+            </div>
+            <button ng-click="count();" class="btn btn-default">Check If Too Much</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.none {
+    color: black;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.border-none {
+    border-color: inherit;
+}
+
+.border-success {
+    border-color: green;
+}
+
+.border-error {
+    border-color: red;
+}
